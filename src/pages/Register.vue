@@ -51,8 +51,8 @@ watch([email, password], (val) => {
 <template>
     <div class="container">
         <div class="row min-vh-100 align-items-center justify-content-center">
-            <div class="col-auto">
-                <div class="card shadow-sm rounded-5 border-light-subtle p-3" style="min-width: 30rem;">
+            <div class="col-12 col-md-6">
+                <div class="card shadow-sm rounded-5 border-light-subtle p-3">
                     <div class="card-body">
                         <form @submit.prevent="handleRegister()">
                             <h3 class="text-center">MoviesGo</h3>

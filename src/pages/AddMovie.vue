@@ -69,9 +69,9 @@ watch([title, director, year, description, genre], (val) => {
 
             <div class="row min-vh-100 align-items-center justify-content-center">
 
-                <div class="col-auto">
+                <div class="col-12 col-md-6">
 
-                    <div class="card p-4" style="min-width: 50rem">
+                    <div class="card p-4">
 
                         <div class="card-body">
                             <form @submit.prevent="handleAddMovie()">
