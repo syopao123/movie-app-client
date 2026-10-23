@@ -39,6 +39,13 @@ export const useUserStore = defineStore('user', {
         },
 
         async getUserDetails() {
+
+            const token = localStorage.getItem('token');
+
+            if (token) {
+                this.token = token;
+            }
+
             let response = await api.get('/users/details');
 
             if (response.data.user) {
